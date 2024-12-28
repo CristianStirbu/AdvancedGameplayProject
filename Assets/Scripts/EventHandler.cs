@@ -4,13 +4,69 @@ using UnityEngine;
 
 public class EventHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public interface IEvent
+    {
+        void OnBegin(bool bFirstTime);
+        void OnUpdate();
+        void OnEnd();
+        bool IsDone();
+    }
+
+    public abstract class GameEvent : IEvent
+    {
+        public virtual void OnBegin(bool bFirstTime)
+        {
+        }
+
+        public virtual void OnUpdate()
+        {
+        }
+
+        public virtual void OnEnd()
+        {
+        }
+
+        public virtual bool IsDone()
+        {
+            return true;
+        }
+
+        public override string ToString()
+        {
+            return GetType().Name;
+        }
+    }
+
+    public abstract class GameEventBehaviour : MonoBehaviour, IEvent
+    {
+        public virtual void OnBegin(bool bFirstTime)
+        {
+        }
+
+        public virtual void OnUpdate()
+        {
+        }
+
+        public virtual void OnEnd()
+        {
+        }
+
+        public virtual bool IsDone()
+        {
+            return true;
+        }
+
+        public override string ToString()
+        {
+            return GetType().Name;
+        }
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
