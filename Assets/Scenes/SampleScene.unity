@@ -659,6 +659,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -747,7 +748,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
@@ -774,6 +775,27 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de78221518eb4e942a7926b6ff2e38d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2127017573}
+  distance: 5
+  hight: 2
+  rotationSpeed: 2
+  zoomSpeed: 2
+  minZoom: 2
+  maxZoom: 10
+  heightSmooth: 0.05
+  rotationSmooth: 0.1
 --- !u!4 &1119885962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5353263257229851791, guid: 154703c8827a19241a289d4cd734d234, type: 3}
@@ -891,6 +913,11 @@ MonoBehaviour:
     m_Bits: 8
   moveSpeed: 5
   jumpHeight: 2
+--- !u!4 &2127017573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6609549649516575171, guid: 1100699d665634ee698997437839cb9b, type: 3}
+  m_PrefabInstance: {fileID: 654055779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2567352684115695015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -991,6 +1018,10 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1814818619}
+    - target: {fileID: 6789193049544694138, guid: ff4922f6880c92d4a97c086065b1bec7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8276071431744333028, guid: ff4922f6880c92d4a97c086065b1bec7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.000000021020776
