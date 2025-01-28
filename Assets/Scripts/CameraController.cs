@@ -52,7 +52,7 @@ namespace Game
             float vertical = Input.GetAxis("Mouse Y");
 
             currentRotation += horizontal * rotationSpeed;
-            currentHeight += vertical +1;
+            currentHeight += vertical* rotationSpeed;
 
             currentHeight = Mathf.Clamp(currentHeight, 0f, 10f);
 
