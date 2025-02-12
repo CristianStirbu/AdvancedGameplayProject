@@ -1622,8 +1622,12 @@ PrefabInstance:
       value: Wall_Simple_01_TurnShort_90
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed279349019c5455baddba5fd2e515ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: ed279349019c5455baddba5fd2e515ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.598164
+      value: -13.88
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed279349019c5455baddba5fd2e515ee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1631,7 +1635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed279349019c5455baddba5fd2e515ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.6206188
+      value: 1.49
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ed279349019c5455baddba5fd2e515ee, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1688,7 +1692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e3e0b82ae5674414297f51b15d993235, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e3e0b82ae5674414297f51b15d993235, type: 3}
       propertyPath: m_LocalPosition.x
